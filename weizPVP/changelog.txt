@@ -1,0 +1,11 @@
+v1.9.9.4:
+- Added new Crosshair setting to enable the Crosshair for Friendly targets. (Must have Friendly Namplates enabled.)
+- Increased capacity for the weizPVP window to show up to 40 bars. (So full teams for Epic Battlegrounds.)
+- Added Addon Icon for the menus to the default weizPVP logo.
+- Added Addon Compartment Functionality to toggle settings.
+- Updated TOC version for Dragonflight v10.1.7.
+
+v1.9.9.3:
+- Hopefully the targetting system is fixed for all that click on names now. (Patch provided by bacara3d. Thanks!)
+- Fixed toc X-Website & X-Curse-Project-ID, also removed X-WoWI-ID.
+- Added a test to check for any nearby Spectral Sight's to popup like Stealth notifications.

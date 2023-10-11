@@ -1,0 +1,11 @@
+<Bindings>
+	<Binding name="WEIZPVPTOGGLE" header="WEIZPVP" Category="ADDONS">
+		weizPVP_ToggleWindows()
+	</Binding>
+	<Binding name="WEIZPVPCLEARPLAYERLIST" Category="ADDONS">
+		weizPVP_ClearListData()
+	</Binding>
+	<Binding name="WEIZPVPTOGGLECROSSHAIR" Category="ADDONS">
+		weizPVP_ToggleCrosshair()
+	</Binding>
+</Bindings>
