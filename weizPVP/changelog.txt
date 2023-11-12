@@ -1,3 +1,7 @@
+v1.9.9.6:
+-Updated internal version number to reflect current weizPVP v1.9.9.6.
+- Updated TOC version for Dragonflight v10.2.0.
+
 v1.9.9.5:
 - Fixes White Box when loading due to updated LibRangeCheck update from 2.0 to 3.0.
 
