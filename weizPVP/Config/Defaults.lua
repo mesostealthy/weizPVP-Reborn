@@ -76,7 +76,7 @@ Options.AudioAlerts = {
 --: Bars
 ---------------------------------------
 Options.Bars = {
-  MaxNumBars = 40,
+  MaxNumBars = 80,
   AlphaDead = 0.8,
   AlphaInactive = 0.6,
   AlphaDefault = 1,

@@ -1693,12 +1693,12 @@ local labGroup = {
         maxNumberBars = {
           name = " Max Number of Bars to show",
           desc = "Change the maximum number of player bars that are shown\n" ..
-              NS.ColorsLUT["info"]:WrapTextInColorCode("(Default = 20)"),
+              NS.ColorsLUT["info"]:WrapTextInColorCode("(Default = 80)"),
           type = "range",
           order = 1,
           width = "full",
           min = 4,
-          max = 20,
+          max = 80,
           step = 1,
           get = function()
               if not numBars then

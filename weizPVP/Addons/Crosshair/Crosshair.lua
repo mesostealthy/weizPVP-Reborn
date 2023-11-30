@@ -21,6 +21,7 @@ local RangeCheckTicker
 local RAID_CLASS_COLORS = RAID_CLASS_COLORS
 local DISABLED_FONT_COLOR = DISABLED_FONT_COLOR
 local UIFrameFadeIn = UIFrameFadeIn
+local InCombatLockdown = InCombatLockdown
 local IsItemInRange = IsItemInRange
 local UnitIsUnit = UnitIsUnit
 local C_NamePlate = C_NamePlate
@@ -142,6 +143,7 @@ local function HideNet5000()
 end
 
 local function IsNetUsable()
+    if (InCombatLockdown() == true) then return false end
     return (IsFlying("target") and IsItemInRange("Net-o-Matic 5000", "target") and IsUsableItem("Net-o-Matic 5000"))
 end
 

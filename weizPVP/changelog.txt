@@ -1,5 +1,8 @@
+v1.9.9.7:
+- Updated LibRangeCheck3.0 to fix lua errors while in combat.
+
 v1.9.9.6:
--Updated internal version number to reflect current weizPVP v1.9.9.6.
+- Updated internal version number to reflect current weizPVP v1.9.9.6.
 - Updated TOC version for Dragonflight v10.2.0.
 
 v1.9.9.5:
