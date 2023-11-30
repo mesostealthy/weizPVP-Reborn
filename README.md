@@ -1,4 +1,4 @@
-# weizPVP-Dragonflight- v1.9.9.6 (Patched for Dragonflight)
+# weizPVP-Dragonflight- v1.9.9.7 (Patched for Dragonflight)
 
 This killer addon was created by the great weiz!
 I hope you are recovering after your accident! I know we are all sending
@@ -20,6 +20,9 @@ weiz did for it! Such an amazing addon, couldn't let it die!
 ---------------------------------------------------------------------------
 Latest changes:
 ---------------------------------------------------------------------------
+v1.9.9.7:
+- Updated LibRangeCheck3.0 to fix lua errors while in combat.
+
 v1.9.9.6:
 -Updated internal version number to reflect current weizPVP v1.9.9.6.
 - Updated TOC version for Dragonflight v10.2.0.
