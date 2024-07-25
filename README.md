@@ -1,4 +1,4 @@
-# weizPVP-Dragonflight- v1.9.9.7 (Patched for Dragonflight)
+# weizPVP-Dragonflight- v2.0.0.0 (Patched for Dragonflight)
 
 This killer addon was created by the great weiz!
 I hope you are recovering after your accident! I know we are all sending
@@ -20,6 +20,10 @@ weiz did for it! Such an amazing addon, couldn't let it die!
 ---------------------------------------------------------------------------
 Latest changes:
 ---------------------------------------------------------------------------
+v2.0.0.0:
+- Fixed UIDropDownMenu for adding/removing to/from KOS.
+- Updated TOC version for The War Withing v11.0.0.
+
 v1.9.9.7:
 - Updated LibRangeCheck3.0 to fix lua errors while in combat.
 

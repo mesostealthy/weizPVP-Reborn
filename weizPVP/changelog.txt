@@ -1,3 +1,7 @@
+v2.0.0.0:
+- Fixed UIDropDownMenu for adding/removing to/from KOS.
+- Updated TOC version for The War Withing v11.0.0.
+
 v1.9.9.7:
 - Updated LibRangeCheck3.0 to fix lua errors while in combat.
 
