@@ -81,12 +81,16 @@ function NS.LoadDB()
     -- LOAD CHARACTER DB
     NS.charDB = LibStub("AceDB-3.0"):New("_weizpvp_chardb", NS._DefaultOptions, true)
     NS.Options = NS.charDB.profile.Options
-    NS.KosList = NS.charDB.profile.KosList or {}
+    NS.oldKosList = NS.charDB.profile.KosList or nil
+
+    -- LOAD GLOBAL INFO (ACCOUNT-WIDE) DB
+    NS.global_info = LibStub("AceDB-3.0"):New("_weizpvp_global_info", {}, false)
 
     -- LOAD GLOBAL (ACCOUNT-WIDE) DB
     NS.globalDB = LibStub("AceDB-3.0"):New("_weizpvp_globaldb", {}, false)
-    NS.PlayerDB = {}
-    NS.PlayerDB = NS.globalDB.global
+    NS.GlobalVersionUpgradeCheck()
+    NS.PlayerDB = NS.globalDB.global.PlayerDB or {}
+    NS.KosList = NS.globalDB.global.KosList or {}
 
     -- MAINTAIN DB
     NS.CleanDB_SpecificDays(NS.Options.Database.CleanTime)

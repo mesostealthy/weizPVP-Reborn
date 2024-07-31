@@ -69,7 +69,7 @@ end
 -- ⬅️ Get Addon Info
 ----------------------------------------------------------------
 local function SetAddonInfo()
-    weizPVP.Database_Version = 3
+    weizPVP.Database_Version = 4
     weizPVP.Addon_Version = GetAddOnMetadata(ADDON_NAME, "Version")
 end
 
@@ -98,4 +98,5 @@ function weizPVP.OnInitialize()
     end
 
     NS.KOS.Enable()
+    NS.KOS.MigrateKosList()
 end

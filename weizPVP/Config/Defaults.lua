@@ -216,8 +216,8 @@ Options.Frames.List.Height = Options.Frames.List.Height * Options.Bars.MaxNumBar
 -- ➡️ Apply Defaults
 ---------------------------------------
 NS._DefaultOptions = {
-  profile = {
-    Options = Options,
-    KosList = {}
-  }
+   profile = {
+      Options = Options,
+      KosList = {},
+   }
 }

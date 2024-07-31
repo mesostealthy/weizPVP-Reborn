@@ -47,6 +47,27 @@ function weizPVP_AddonCompartmentOnClick(addonName, buttonName)
 	NS.ToggleOptions()
 end
 
+--> GLOBAL VERSION UPGRADE CHECK
+-----------------------------------------------------------
+function NS.GlobalVersionUpgradeCheck()
+    -- not created?
+    if (not NS.globalDB.global.PlayerDB) then
+       -- initialize
+       NS.PlayerDB = CopyTable(NS.globalDB.global)
+       wipe(NS.globalDB.global)
+       NS.PlayerDB["KosList"] = nil
+       NS.PlayerDB["PlayerDB"] = nil
+       NS.globalDB.global.PlayerDB = CopyTable(NS.PlayerDB)
+       wipe(NS.PlayerDB)
+    end
+
+    -- not created?
+    if (not NS.globalDB.global.KosList) then
+       -- initialize
+       NS.globalDB.global.KosList = {}
+    end
+end
+
 --> VERSION UPGRADE CHECK
 -----------------------------------------------------------
 function NS.VersionUpgradeCheck()
@@ -60,11 +81,13 @@ function NS.VersionUpgradeCheck()
             upgrade = true
         end
     end
+
     -- Update addon info
     _weizpvp_global_info = {
-    Database_Version = weizPVP.Database_Version,
-    Addon_Version = weizPVP.Addon_Version
+       Database_Version = weizPVP.Database_Version,
+       Addon_Version = weizPVP.Addon_Version
     }
+
     -- Upgrade / Wipe ?
     if upgrade then
         NS.globalDB.global = {}

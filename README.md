@@ -1,4 +1,4 @@
-# weizPVP-Dragonflight- v2.0.0.0 (Patched for Dragonflight)
+# weizPVP-Dragonflight- v2.0.0.1 (Patched for Dragonflight + The War Within)
 
 This killer addon was created by the great weiz!
 I hope you are recovering after your accident! I know we are all sending
@@ -20,6 +20,10 @@ weiz did for it! Such an amazing addon, couldn't let it die!
 ---------------------------------------------------------------------------
 Latest changes:
 ---------------------------------------------------------------------------
+v2.0.0.1:
+- KOS lists are now saved globally across all toons. (Will copy local KOS to global KOS upon logging in each toon.)
+- Added Stealth notification when an enemy player casts Sp-eye-glass nearby.
+
 v2.0.0.0:
 - Fixed UIDropDownMenu for adding/removing to/from KOS.
 - Updated TOC version for The War Withing v11.0.0.

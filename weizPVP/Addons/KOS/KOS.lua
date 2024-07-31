@@ -97,3 +97,29 @@ function NS.KOS.RemovePlayer(playerName)
         NS.Crosshair.NewTarget()
     end
 end
+
+--> Migrate character list to global KOS list
+function NS.KOS.MigrateKosList()
+    -- has old KOS?
+    if (NS.oldKosList) then
+        -- global not created?
+        if (not NS.KosList) then
+           -- initialize
+           NS.KosList = {}
+        end
+
+        -- process all local KOS
+        for k,v in pairs(NS.oldKosList) do
+            -- not global KOS already?
+            if (not NS.KosList[k]) then
+                -- add player to global KOS list
+                NS.KosList[k] = true
+
+                -- remove player from local KOS list
+                NS.oldKosList[k] = nil
+            end
+        end
+        NS.charDB.profile.KosList = nil
+        NS.oldKosList = nil
+    end
+end

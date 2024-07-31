@@ -2,7 +2,7 @@
 ## Interface: 110000
 ## Title: weizPVP |TInterface/Addons/weizPVP/Media/toc:16|t
 #--------------------------------------------------------------------
-## Version: v2.0.0.0
+## Version: v2.0.0.1
 ## Author: weiz (Patched by Mesostealthy)
 ## Notes: World PVP Multi-tool: Detect, analyze, and display enemy players. Target Crosshair, Stealth Alerts, Kill On Sight and more!
 #--------------------------------------------------------------------
