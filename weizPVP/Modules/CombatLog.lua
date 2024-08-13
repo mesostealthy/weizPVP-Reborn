@@ -12,7 +12,7 @@ local time = time
 local GetPlayerInfoByGUID = GetPlayerInfoByGUID
 local CL_HOSTILE = COMBATLOG_OBJECT_REACTION_HOSTILE
 local CL_PLAYER = COMBATLOG_OBJECT_TYPE_PLAYER
-local GetSpellInfo = GetSpellInfo
+local GetSpellInfo = C_Spell.GetSpellInfo
 
 --: Auras Constants :------------------
 local holyPriest = {
