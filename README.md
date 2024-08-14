@@ -1,4 +1,4 @@
-# weizPVP v2.0.0.1 (Patched for The War Within)
+# weizPVP (Reborn) v2.0.0.2 (Patched for The War Within)
 
 This killer addon was created by the great weiz!
 I hope you are recovering after your accident! I know we are all sending
