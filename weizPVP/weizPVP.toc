@@ -16,7 +16,7 @@
 ## DefaultState: enabled
 ## LoadOnDemand: 0
 #--------------------------------------------------------------------
-## X-Website: https://www.curseforge.com/wow/addons/weizpvp-dragonflight
+## X-Website: https://www.curseforge.com/wow/addons/weizpvp-reborn
 ## X-Curse-Project-ID: 694350
 #--------------------------------------------------------------------
 Load.xml
