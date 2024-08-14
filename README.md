@@ -1,11 +1,11 @@
-# weizPVP-Dragonflight- v2.0.0.1 (Patched for Dragonflight + The War Within)
+# weizPVP v2.0.0.1 (Patched for The War Within)
 
 This killer addon was created by the great weiz!
 I hope you are recovering after your accident! I know we are all sending
 you get well wishes and prayers from Mesostealthy & friends!
 
 So for now, I'm just going through this addon and fixing the stuff that
-Blizzard changed in the Dragonflight v10.0.0 prepatch! I can't say that
+Blizzard changed in the War Within v11.0.0 prepatch! I can't say that
 I know exactly how everything works in weizPVP because it's such a HUGE
 addon! But I'll do my best to get most things at least working like they
 did in the Shadowlands!
@@ -20,6 +20,11 @@ weiz did for it! Such an amazing addon, couldn't let it die!
 ---------------------------------------------------------------------------
 Latest changes:
 ---------------------------------------------------------------------------
+v2.0.0.2:
+- Fixed GetAddOnMetadata to use proper C_Addons.GetAddOnMetadata.
+- Fixed GetSpellInfo to use proper C_Spell.GetSpellInfo.
+- Updated TOC version for The War Within v11.0.2.
+
 v2.0.0.1:
 - KOS lists are now saved globally across all toons. (Will copy local KOS to global KOS upon logging in each toon.)
 - Added Stealth notification when an enemy player casts Sp-eye-glass nearby.

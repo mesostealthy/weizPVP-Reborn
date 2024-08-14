@@ -1,3 +1,8 @@
+v2.0.0.2:
+- Fixed GetAddOnMetadata to use proper C_Addons.GetAddOnMetadata.
+- Fixed GetSpellInfo to use proper C_Spell.GetSpellInfo.
+- Updated TOC version for The War Within v11.0.2.
+
 v2.0.0.1:
 - KOS lists are now saved globally across all toons. (Will copy local KOS to global KOS upon logging in each toon.)
 - Added Stealth notification when an enemy player casts Sp-eye-glass nearby.

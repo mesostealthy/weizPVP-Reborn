@@ -6,13 +6,14 @@ local _, NS = ...
 --: 🆙 Upvalues :----------------------
 local bit_band = bit.band
 local strfind = strfind
+local strsplit = strsplit
 local strsub = strsub
 local CombatLogGetCurrentEventInfo = CombatLogGetCurrentEventInfo
 local time = time
 local GetPlayerInfoByGUID = GetPlayerInfoByGUID
 local CL_HOSTILE = COMBATLOG_OBJECT_REACTION_HOSTILE
 local CL_PLAYER = COMBATLOG_OBJECT_TYPE_PLAYER
-local GetSpellInfo = GetSpellInfo
+local GetSpellInfo = C_Spell and C_Spell.GetSpellInfo or GetSpellInfo
 
 --: Auras Constants :------------------
 local holyPriest = {
@@ -150,8 +151,11 @@ end
 
 --> Format CLog Name <-----------------------------------------------
 local function FormatCLogName(srcName)
-    if not strfind(srcName, "-") then
-        srcName = srcName .. "-" .. NS.PlayerRealm
+    local name, realm, region = strsplit("-", srcName)
+    if not realm then
+        srcName = name .. "-" .. NS.PlayerRealm
+    else
+        srcName = name .. "-" .. realm
     end
     return srcName
 end

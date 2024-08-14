@@ -32,7 +32,7 @@ end
 -----------------------------------------------------------
 function NS.ToggleOptions()
     if SettingsPanel:IsShown() then
-        SettingsPanel:Hide()
+        SettingsPanel:Close()
     else
         Settings_OpenToCategory(ADDON_NAME) -- open options to ADDON_NAME
         --TODO: fix below -Meso
