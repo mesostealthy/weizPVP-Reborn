@@ -1,4 +1,4 @@
-# weizPVP (Reborn) v2.0.0.2 (Patched for The War Within)
+# weizPVP (Reborn) v2.0.0.3 (Patched for The War Within)
 
 This killer addon was created by the great weiz!
 I hope you are recovering after your accident! I know we are all sending
@@ -20,6 +20,9 @@ weiz did for it! Such an amazing addon, couldn't let it die!
 ---------------------------------------------------------------------------
 Latest changes:
 ---------------------------------------------------------------------------
+v2.0.0.3:
+- Fixed SetGradient when trying to move the weizPVP window while it's locked.
+
 v2.0.0.2:
 - Fixed GetAddOnMetadata to use proper C_Addons.GetAddOnMetadata.
 - Fixed GetSpellInfo to use proper C_Spell.GetSpellInfo.

@@ -843,28 +843,10 @@ end
 -----------------------------------------------------------
 function NS.CoreUI.FlashTitleBar(color)
     if NS.ColorsLUT[color] then
-        weizPVP_CoreBar.StatusHeader.Highlight.grad:SetGradient(
-        "HORIZONTAL",
-            NS.ColorsLUT[color].r,
-            NS.ColorsLUT[color].g,
-            NS.ColorsLUT[color].b,
-            0,
-            NS.ColorsLUT[color].r,
-            NS.ColorsLUT[color].g,
-            NS.ColorsLUT[color].b,
-            0.4
-        )
-        weizPVP_CoreBar.StatusHeader.Highlight.grad2:SetGradient(
-        "HORIZONTAL",
-            NS.ColorsLUT[color].r,
-            NS.ColorsLUT[color].g,
-            NS.ColorsLUT[color].b,
-            0.4,
-            NS.ColorsLUT[color].r,
-            NS.ColorsLUT[color].g,
-            NS.ColorsLUT[color].b,
-            0
-        )
+        local minColor = CreateColor(NS.ColorsLUT[color].r, NS.ColorsLUT[color].g, NS.ColorsLUT[color].b, 0)
+        local maxColor = CreateColor(NS.ColorsLUT[color].r, NS.ColorsLUT[color].g, NS.ColorsLUT[color].b, 0.4)
+        weizPVP_CoreBar.StatusHeader.Highlight.grad:SetGradient("HORIZONTAL", minColor, maxColor)
+        weizPVP_CoreBar.StatusHeader.Highlight.grad2:SetGradient("HORIZONTAL", maxColor, minColor)
         if weizPVP_CoreBar.HeaderFlash:IsPlaying() then
             weizPVP_CoreBar.HeaderFlash:Restart()
         else

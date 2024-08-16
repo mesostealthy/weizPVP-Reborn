@@ -1,3 +1,6 @@
+v2.0.0.3:
+- Fixed SetGradient when trying to move the weizPVP window while it's locked.
+
 v2.0.0.2:
 - Fixed GetAddOnMetadata to use proper C_Addons.GetAddOnMetadata.
 - Fixed GetSpellInfo to use proper C_Spell.GetSpellInfo.

@@ -2,7 +2,7 @@
 ## Interface: 110002
 ## Title: weizPVP |TInterface/Addons/weizPVP/Media/toc:16|t
 #--------------------------------------------------------------------
-## Version: v2.0.0.2
+## Version: v2.0.0.3
 ## Author: weiz (Patched by Mesostealthy)
 ## Notes: World PVP Multi-tool: Detect, analyze, and display enemy players. Target Crosshair, Stealth Alerts, Kill On Sight and more!
 #--------------------------------------------------------------------
@@ -18,5 +18,6 @@
 #--------------------------------------------------------------------
 ## X-Website: https://www.curseforge.com/wow/addons/weizpvp-reborn
 ## X-Curse-Project-ID: 694350
+## X-Wago-ID: qKQxZn6x
 #--------------------------------------------------------------------
 Load.xml
