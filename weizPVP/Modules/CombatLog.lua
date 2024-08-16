@@ -15,11 +15,21 @@ local CL_HOSTILE = COMBATLOG_OBJECT_REACTION_HOSTILE
 local CL_PLAYER = COMBATLOG_OBJECT_TYPE_PLAYER
 local GetSpellInfo = C_Spell and C_Spell.GetSpellInfo or GetSpellInfo
 
+local function GetSpellIcon(spellID)
+   local info = GetSpellInfo(spellID)
+   return info.iconID
+end
+
+local function GetSpellName(spellID)
+   local info = GetSpellInfo(spellID)
+   return info.name
+end
+
 --: Auras Constants :------------------
 local holyPriest = {
-  [27827] = GetSpellInfo(27827),
-  [20711] = GetSpellInfo(20711),
-  [126094] = GetSpellInfo(126094)
+  [27827] = GetSpellName(27827),
+  [20711] = GetSpellName(20711),
+  [126094] = GetSpellName(126094)
 }
 local stealthIDs = {
   [1784] = true, -- Stealth
@@ -133,7 +143,7 @@ local function AuraCheck(spellID, spellName, srcGUID, srcName)
     -- * Stealth check
     if stealthNames[spellName] or stealthIDs[spellID] then
         if NS.Options.StealthAlert.Enabled then
-            _, _, spellIcon = GetSpellInfo(spellID)
+            local spellIcon = GetSpellIcon(spellID)
             NS.StealthAlertEvent(spellName, NS.FormatPlayerNameAndRealm(srcName, srcGUID), spellIcon)
         end
         NS.UpdatePlayerActiveCache(srcName, true, false, nil, srcGUID)

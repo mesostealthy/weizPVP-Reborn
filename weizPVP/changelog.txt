@@ -1,3 +1,6 @@
+v2.0.0.4:
+- Fixed Stealth chat message, as well as the popup when detected.
+
 v2.0.0.3:
 - Fixed SetGradient when trying to move the weizPVP window while it's locked.
 
