@@ -174,7 +174,8 @@ Options.StealthAlert = {
   ChatAlert = true,
   DisableSoundInBG = false,
   DisableSoundInSanctuary = true,
-  DisableVisualStealthAlertsInSanctuary = true
+  DisableVisualStealthAlertsInSanctuary = true,
+  PopupBarAdjustYPos =  0
 }
 
 --: KOS

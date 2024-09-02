@@ -115,9 +115,22 @@ local function CreateAlertFrame()
     NS.AlertFrame.anim.ag3:SetSmoothing("OUT")
 end
 
+--> Stealth Alert set adjust Y-position <----------------------------
+function NS.StealthAlertSetAdjustYPos(position)
+    if ((position < -100) or (position > 100)) then
+       position = 0
+    end
+    NS.AlertFrame.anim.ag0t:SetOffset(0, -100 + position)
+    NS.AlertFrame.anim.ag2t:SetOffset(0, 100 + position)
+    NS.AlertFrame.anim.ag3:SetOffset(0, 200 + position)
+end
+
 --> Initialize Alerts <----------------------------------------------
 function NS.InitializeAlerts()
     CreateAlertFrame()
+    if (NS.Options.StealthAlert.PopupBarAdjustYPos ~= 0) then
+       NS.StealthAlertSetAdjustYPos(NS.Options.StealthAlert.PopupBarAdjustYPos)
+    end
 end
 
 --> Stealth Alert <--------------------------------------------------
@@ -222,8 +235,6 @@ local function StealthAudioAlert()
         )
     end
 end
-
-
 
 --> Stealth Alert Event <--------------------------------------------
 function NS.StealthAlertEvent(event, player, icon)

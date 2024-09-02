@@ -1,4 +1,4 @@
-# weizPVP (Reborn) v2.0.0.4 (Patched for The War Within)
+# weizPVP (Reborn) [Patched for The War Within]
 
 This killer addon was created by the great weiz!
 I hope you are recovering after your accident! I know we are all sending
@@ -20,6 +20,9 @@ weiz did for it! Such an amazing addon, couldn't let it die!
 ---------------------------------------------------------------------------
 Latest changes:
 ---------------------------------------------------------------------------
+v2.0.0.5:
+- New Setting: Stealth Alerts - Pop Up Alerts - Adjust Y-Position up/down. (Can be used to not cover Raid Warnings)
+
 v2.0.0.4:
 - Fixed Stealth chat message, as well as the popup when detected.
 

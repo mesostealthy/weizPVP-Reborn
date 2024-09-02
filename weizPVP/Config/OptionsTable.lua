@@ -855,12 +855,30 @@ local alertsGroup = {
                   NS.Options.StealthAlert.Enabled = value
               end
             },
+            PopupBarAdjustYPos = {
+              name = "Adjust Y-Position",
+              desc = "Change the Y-Position of the popup alert.",
+              width = "full",
+              type = "range",
+              order = 2,
+              min = -100,
+              max = 100,
+              step = 1,
+              validate = ValidateNumeric,
+              get = function()
+                  return NS.Options.StealthAlert.PopupBarAdjustYPos
+              end,
+              set = function(_, value)
+                  NS.StealthAlertSetAdjustYPos(value)
+                  NS.Options.StealthAlert.PopupBarAdjustYPos = value
+              end
+            },
             DisableVisualStealthAlertsInSanctuary = {
               name = " Disable while in a Sanctuary zone",
               desc = "Disable alert pop-up while in a Sanctuary.",
               type = "toggle",
               width = "full",
-              order = 2,
+              order = 3,
               get = function()
                   return NS.Options.StealthAlert.DisableVisualStealthAlertsInSanctuary
               end,
